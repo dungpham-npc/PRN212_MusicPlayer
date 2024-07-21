@@ -46,28 +46,38 @@
             lbl_track_start = new Label();
             lbl_track_end = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            menuStrip1 = new MenuStrip();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            changeMusicPathToolStripMenuItem = new ToolStripMenuItem();
+            btnPlayMode = new Button();
+            label1 = new Label();
+            btnQuit = new Button();
+            trackBar1 = new TrackBar();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pic_art).BeginInit();
             ((System.ComponentModel.ISupportInitialize)trackVolume).BeginInit();
             ((System.ComponentModel.ISupportInitialize)player).BeginInit();
+            menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
             SuspendLayout();
             // 
             // preview_btn
             // 
             preview_btn.FlatStyle = FlatStyle.Flat;
-            preview_btn.Location = new Point(22, 398);
+            preview_btn.Location = new Point(86, 590);
             preview_btn.Name = "preview_btn";
-            preview_btn.Size = new Size(103, 27);
+            preview_btn.Size = new Size(103, 42);
             preview_btn.TabIndex = 0;
-            preview_btn.Text = "Preview";
+            preview_btn.Text = "Previous";
             preview_btn.UseVisualStyleBackColor = true;
             preview_btn.Click += preview_btn_Click;
             // 
             // next_btn
             // 
             next_btn.FlatStyle = FlatStyle.Flat;
-            next_btn.Location = new Point(131, 398);
+            next_btn.Location = new Point(195, 590);
             next_btn.Name = "next_btn";
-            next_btn.Size = new Size(103, 27);
+            next_btn.Size = new Size(103, 42);
             next_btn.TabIndex = 1;
             next_btn.Text = "Next";
             next_btn.UseVisualStyleBackColor = true;
@@ -76,9 +86,9 @@
             // play_btn
             // 
             play_btn.FlatStyle = FlatStyle.Flat;
-            play_btn.Location = new Point(240, 398);
+            play_btn.Location = new Point(304, 590);
             play_btn.Name = "play_btn";
-            play_btn.Size = new Size(103, 27);
+            play_btn.Size = new Size(103, 42);
             play_btn.TabIndex = 2;
             play_btn.Text = "Play";
             play_btn.UseVisualStyleBackColor = true;
@@ -87,9 +97,9 @@
             // pause_btn
             // 
             pause_btn.FlatStyle = FlatStyle.Flat;
-            pause_btn.Location = new Point(349, 398);
+            pause_btn.Location = new Point(413, 590);
             pause_btn.Name = "pause_btn";
-            pause_btn.Size = new Size(103, 27);
+            pause_btn.Size = new Size(103, 42);
             pause_btn.TabIndex = 3;
             pause_btn.Text = "Pause";
             pause_btn.UseVisualStyleBackColor = true;
@@ -98,9 +108,9 @@
             // stop_btn
             // 
             stop_btn.FlatStyle = FlatStyle.Flat;
-            stop_btn.Location = new Point(458, 398);
+            stop_btn.Location = new Point(522, 590);
             stop_btn.Name = "stop_btn";
-            stop_btn.Size = new Size(103, 27);
+            stop_btn.Size = new Size(103, 42);
             stop_btn.TabIndex = 4;
             stop_btn.Text = "Stop";
             stop_btn.UseVisualStyleBackColor = true;
@@ -108,19 +118,19 @@
             // 
             // open_btn
             // 
-            open_btn.Location = new Point(591, 380);
+            open_btn.Location = new Point(655, 571);
             open_btn.Name = "open_btn";
-            open_btn.Size = new Size(186, 58);
+            open_btn.Size = new Size(186, 61);
             open_btn.TabIndex = 5;
-            open_btn.Text = "Open";
+            open_btn.Text = "Choose File";
             open_btn.UseVisualStyleBackColor = true;
             open_btn.Click += open_btn_Click;
             // 
             // p_bar
             // 
-            p_bar.Location = new Point(22, 357);
+            p_bar.Location = new Point(56, 534);
             p_bar.Name = "p_bar";
-            p_bar.Size = new Size(755, 17);
+            p_bar.Size = new Size(736, 15);
             p_bar.TabIndex = 6;
             p_bar.Click += p_bar_Click;
             // 
@@ -129,28 +139,28 @@
             track_list.BackColor = Color.Gray;
             track_list.ForeColor = Color.Maroon;
             track_list.FormattingEnabled = true;
-            track_list.Location = new Point(349, 100);
+            track_list.Location = new Point(414, 237);
             track_list.Name = "track_list";
-            track_list.Size = new Size(359, 251);
+            track_list.Size = new Size(359, 264);
             track_list.TabIndex = 7;
             track_list.SelectedIndexChanged += track_list_SelectedIndexChanged;
             // 
             // pic_art
             // 
             pic_art.Image = (Image)resources.GetObject("pic_art.Image");
-            pic_art.Location = new Point(42, 100);
+            pic_art.Location = new Point(107, 237);
             pic_art.Name = "pic_art";
-            pic_art.Size = new Size(301, 251);
+            pic_art.Size = new Size(301, 264);
             pic_art.TabIndex = 8;
             pic_art.TabStop = false;
             // 
             // trackVolume
             // 
-            trackVolume.Location = new Point(732, 131);
+            trackVolume.Location = new Point(887, 289);
             trackVolume.Maximum = 100;
             trackVolume.Name = "trackVolume";
             trackVolume.Orientation = Orientation.Vertical;
-            trackVolume.Size = new Size(45, 197);
+            trackVolume.Size = new Size(56, 207);
             trackVolume.TabIndex = 10;
             trackVolume.TickStyle = TickStyle.TopLeft;
             trackVolume.Scroll += trackVolume_Scroll;
@@ -159,18 +169,18 @@
             // 
             volume_label.AutoSize = true;
             volume_label.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            volume_label.Location = new Point(712, 321);
+            volume_label.Location = new Point(867, 489);
             volume_label.Name = "volume_label";
-            volume_label.Size = new Size(88, 30);
+            volume_label.Size = new Size(114, 37);
             volume_label.TabIndex = 11;
             volume_label.Text = "Volume";
             // 
             // lbl_volume
             // 
             lbl_volume.AutoSize = true;
-            lbl_volume.Location = new Point(732, 109);
+            lbl_volume.Location = new Point(887, 266);
             lbl_volume.Name = "lbl_volume";
-            lbl_volume.Size = new Size(44, 19);
+            lbl_volume.Size = new Size(45, 20);
             lbl_volume.TabIndex = 12;
             lbl_volume.Text = "100%";
             // 
@@ -179,22 +189,23 @@
             player.AllowDrop = true;
             player.Dock = DockStyle.Top;
             player.Enabled = true;
-            player.Location = new Point(0, 0);
+            player.Location = new Point(0, 28);
             player.Name = "player";
             player.OcxState = (AxHost.State)resources.GetObject("player.OcxState");
-            player.Size = new Size(800, 94);
+            player.Size = new Size(1194, 142);
             player.TabIndex = 9;
+            player.Visible = false;
             player.Enter += player_Enter;
             // 
             // lbl_track_start
             // 
             lbl_track_start.AutoSize = true;
             lbl_track_start.BackColor = SystemColors.ActiveCaptionText;
-            lbl_track_start.Font = new Font("Digital-7 Mono", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_track_start.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_track_start.ForeColor = Color.Lime;
-            lbl_track_start.Location = new Point(22, 20);
+            lbl_track_start.Location = new Point(0, 38);
             lbl_track_start.Name = "lbl_track_start";
-            lbl_track_start.Size = new Size(177, 64);
+            lbl_track_start.Size = new Size(242, 91);
             lbl_track_start.TabIndex = 13;
             lbl_track_start.Text = "00:00";
             // 
@@ -202,11 +213,11 @@
             // 
             lbl_track_end.AutoSize = true;
             lbl_track_end.BackColor = SystemColors.ActiveCaptionText;
-            lbl_track_end.Font = new Font("Digital-7 Mono", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_track_end.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_track_end.ForeColor = Color.Lime;
-            lbl_track_end.Location = new Point(611, 20);
+            lbl_track_end.Location = new Point(952, 38);
             lbl_track_end.Name = "lbl_track_end";
-            lbl_track_end.Size = new Size(177, 64);
+            lbl_track_end.Size = new Size(242, 91);
             lbl_track_end.TabIndex = 14;
             lbl_track_end.Text = "00:00";
             // 
@@ -215,11 +226,91 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.BackColor = SystemColors.ControlLight;
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1194, 28);
+            menuStrip1.TabIndex = 15;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { changeMusicPathToolStripMenuItem });
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(76, 24);
+            toolStripMenuItem1.Text = "Settings";
+            // 
+            // changeMusicPathToolStripMenuItem
+            // 
+            changeMusicPathToolStripMenuItem.Name = "changeMusicPathToolStripMenuItem";
+            changeMusicPathToolStripMenuItem.Size = new Size(216, 26);
+            changeMusicPathToolStripMenuItem.Text = "Change Music Path";
+            changeMusicPathToolStripMenuItem.Click += changeMusicPathToolStripMenuItem_Click;
+            // 
+            // btnPlayMode
+            // 
+            btnPlayMode.FlatStyle = FlatStyle.Flat;
+            btnPlayMode.Location = new Point(304, 650);
+            btnPlayMode.Name = "btnPlayMode";
+            btnPlayMode.Size = new Size(103, 42);
+            btnPlayMode.TabIndex = 16;
+            btnPlayMode.Text = "Normal";
+            btnPlayMode.UseVisualStyleBackColor = true;
+            btnPlayMode.Click += btnPlayMode_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(212, 661);
+            label1.Name = "label1";
+            label1.Size = new Size(86, 20);
+            label1.TabIndex = 17;
+            label1.Text = "Play Mode: ";
+            label1.Click += label1_Click;
+            // 
+            // btnQuit
+            // 
+            btnQuit.Location = new Point(655, 641);
+            btnQuit.Name = "btnQuit";
+            btnQuit.Size = new Size(186, 61);
+            btnQuit.TabIndex = 18;
+            btnQuit.Text = "Quit";
+            btnQuit.UseVisualStyleBackColor = true;
+            btnQuit.Click += btnQuit_Click;
+            // 
+            // trackBar1
+            // 
+            trackBar1.BackColor = SystemColors.MenuBar;
+            trackBar1.Location = new Point(43, 507);
+            trackBar1.Maximum = 100;
+            trackBar1.Name = "trackBar1";
+            trackBar1.Size = new Size(757, 56);
+            trackBar1.SmallChange = 5;
+            trackBar1.TabIndex = 19;
+            trackBar1.TickStyle = TickStyle.None;
+            trackBar1.Scroll += trackBar1_Scroll;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ActiveCaptionText;
+            panel1.Location = new Point(221, 38);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(744, 97);
+            panel1.TabIndex = 20;
+            // 
             // MusicHomePage
             // 
-            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1194, 748);
+            Controls.Add(panel1);
+            Controls.Add(btnQuit);
+            Controls.Add(label1);
+            Controls.Add(btnPlayMode);
             Controls.Add(lbl_track_end);
             Controls.Add(lbl_track_start);
             Controls.Add(lbl_volume);
@@ -235,11 +326,18 @@
             Controls.Add(play_btn);
             Controls.Add(next_btn);
             Controls.Add(preview_btn);
+            Controls.Add(menuStrip1);
+            Controls.Add(trackBar1);
+            MainMenuStrip = menuStrip1;
             Name = "MusicHomePage";
             Text = "Form1";
+            Load += MusicHomePage_Load;
             ((System.ComponentModel.ISupportInitialize)pic_art).EndInit();
             ((System.ComponentModel.ISupportInitialize)trackVolume).EndInit();
             ((System.ComponentModel.ISupportInitialize)player).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -262,5 +360,13 @@
         private Label lbl_track_start;
         private Label lbl_track_end;
         private System.Windows.Forms.Timer timer1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem changeMusicPathToolStripMenuItem;
+        private Button btnPlayMode;
+        private Label label1;
+        private Button btnQuit;
+        private TrackBar trackBar1;
+        private Panel panel1;
     }
 }

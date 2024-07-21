@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pZKLAHsDeNdid548fHIgB7k1SMCyw4BKcLdNn5W8o/qs5vKBUJhSFHgNfne1odm3/vAlpatKbc5ApdHUJgy5ag==",
+  "dgSpecHash": "vvUK0030KAygYT0gDcrAdtfSNKPoMnJR+8K5QB5Nr35ause++B3WU6LFTmQp+G5REiqRuogkUTvroucVB99mHw==",
   "success": true,
-  "projectFilePath": "D:\\saveLearningCode\\PRN212-Summer2024\\AsmProject\\WF_Music_App\\MusicApp\\MusicApp\\MusicApp.csproj",
+  "projectFilePath": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
