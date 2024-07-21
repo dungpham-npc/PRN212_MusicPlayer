@@ -43,3 +43,13 @@ D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\obj\Debug\net8.0-windows\ref
 D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\obj\Debug\net8.0-windows\MusicApp.pdb
 D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\obj\Debug\net8.0-windows\MusicApp.genruntimeconfig.cache
 D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\obj\Debug\net8.0-windows\ref\MusicApp.dll
+D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\bin\Debug\net8.0-windows\Google.Apis.dll
+D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\bin\Debug\net8.0-windows\Google.Apis.Auth.dll
+D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\bin\Debug\net8.0-windows\Google.Apis.Core.dll
+D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\bin\Debug\net8.0-windows\Google.Apis.YouTube.v3.dll
+D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\bin\Debug\net8.0-windows\System.Management.dll
+D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.AssemblyReference.cache
+D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.Up2Date
+D:\Code\PRN212\PRN212_MusicPlayer\MusicApp\MusicApp\bin\Debug\net8.0-windows\libvideo.dll

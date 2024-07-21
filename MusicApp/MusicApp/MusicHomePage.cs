@@ -1,6 +1,9 @@
-﻿using System.Diagnostics;
+﻿using Google.Apis.Services;
+using Google.Apis.YouTube.v3;
+using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
+using VideoLibrary;
 
 namespace MusicApp
 {
@@ -32,7 +35,7 @@ namespace MusicApp
         {
             if (Directory.Exists(musicPath))
             {
-                string[] audioExtensions = { ".mp3", ".wav", ".wma", ".flac" };
+                string[] audioExtensions = { ".mp3", ".wav", ".wma", ".flac", ".mp4" };
 
                 foreach (string file in Directory.EnumerateFiles(musicPath, "*", SearchOption.AllDirectories))
                 {
@@ -55,7 +58,7 @@ namespace MusicApp
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Multiselect = true;
-            openFileDialog.Filter = "Music Files (*.mp3;*.wav;*.wma;*.flac)|*.mp3;*.wav;*.wma;*.flac"; // Set filter for music extensions
+            openFileDialog.Filter = "Music Files (*.mp3;*.wav;*.wma;*.flac;*.mp4)|*.mp3;*.wav;*.wma;*.flac;*.mp4"; // Set filter for music extensions
 
             if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -89,20 +92,30 @@ namespace MusicApp
 
         private bool IsSupportedMusicExtension(string extension)
         {
-            string[] supportedExtensions = { ".mp3", ".wav", ".wma", ".flac" };
+            string[] supportedExtensions = { ".mp3", ".wav", ".wma", ".flac", ".mp4" };
             return supportedExtensions.Contains(extension);
         }
 
 
         private void track_list_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (track_list.SelectedIndex >= 0 && track_list.SelectedIndex < paths?.Count)
+            if (track_list.SelectedIndex >= 0 && track_list.SelectedIndex < paths.Count)
             {
-                Debug.WriteLine($"Playing: {paths[track_list.SelectedIndex]}");
-                player.URL = paths[track_list.SelectedIndex];
-                player.Ctlcontrols.play();
+                string selectedPath = paths[track_list.SelectedIndex];
+                Debug.WriteLine($"Playing: {selectedPath}");
+
+                try
+                {
+                    player.URL = selectedPath;
+                    player.Ctlcontrols.play();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error playing media: {ex.Message}");
+                }
             }
         }
+
 
         private void stop_btn_Click(object sender, EventArgs e)
         {
@@ -341,5 +354,180 @@ namespace MusicApp
         {
 
         }
+
+        private async void btnYoutubeSearch_Click(object sender, EventArgs e)
+        {
+            string query = youtube_searchbar.Text;
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                MessageBox.Show("Please enter a search query.");
+                return;
+            }
+
+            try
+            {
+                var videoItems = await SearchYouTubeVideosAsync(query);
+                youtube_search_result.DataSource = videoItems;
+                youtube_search_result.DisplayMember = "Title";
+                youtube_search_result.ValueMember = "VideoId";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error searching YouTube: {ex.Message}");
+            }
+        }
+
+
+        private void youtube_searchbar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void youtube_search_result_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void btnAddYoutubeTrack_Click(object sender, EventArgs e)
+        {
+            if (youtube_search_result.SelectedItem is VideoItem selectedItem)
+            {
+                string videoUrl = $"https://www.youtube.com/watch?v={selectedItem.VideoId}";
+
+                try
+                {
+                    string downloadedFilePath = await DownloadVideoAsync(videoUrl);
+
+                    if (!string.IsNullOrEmpty(downloadedFilePath))
+                    {
+                        if (!paths.Contains(downloadedFilePath))
+                        {
+                            paths.Add(downloadedFilePath);
+                            track_list.Items.Add(Path.GetFileName(downloadedFilePath));
+                        }
+                        else
+                        {
+                            MessageBox.Show("This track is already in the list.");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error adding video to track list: {ex.Message}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a video from the search results.");
+            }
+        }
+
+
+        private async Task<List<VideoItem>> SearchYouTubeVideosAsync(string query)
+        {
+            var youtubeService = new YouTubeService(new BaseClientService.Initializer
+            {
+                ApiKey = "AIzaSyBmyjUoh3ikMPLyhfqe24T9K5-Tk9ZRc6g",
+                ApplicationName = "MusicApp"
+            });
+
+            var searchRequest = youtubeService.Search.List("snippet");
+            searchRequest.Q = query;
+            searchRequest.MaxResults = 10;
+
+            var searchResponse = await searchRequest.ExecuteAsync();
+            var videoItems = searchResponse.Items
+                .Where(item => item.Id.Kind == "youtube#video")
+                .Select(item => new VideoItem
+                {
+                    Title = item.Snippet.Title,
+                    VideoId = item.Id.VideoId
+                })
+                .ToList();
+
+            return videoItems;
+        }
+
+
+        public class VideoItem
+        {
+            public string Title { get; set; }
+            public string VideoId { get; set; }
+        }
+
+        private string GetMusicDirectoryPath()
+        {
+            string settingsFile = "D:\\music_path.json";
+
+            try
+            {
+                if (File.Exists(settingsFile))
+                {
+                    using (StreamReader reader = new StreamReader(settingsFile))
+                    {
+                        // Read the directory path from the JSON file
+                        string path = JsonSerializer.Deserialize<string>(reader.ReadToEnd());
+
+                        // Validate and return the directory path
+                        if (Directory.Exists(path))
+                        {
+                            Debug.WriteLine(path);
+                            return path;
+                        }
+                        else
+                        {
+                            MessageBox.Show($"The directory path in the settings file does not exist: {path}");
+                            return ""; // Return an empty string to indicate failure
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Settings file not found.");
+                    return ""; // Return an empty string to indicate failure
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error reading settings file: {ex.Message}");
+                return ""; // Return an empty string to indicate failure
+            }
+        }
+
+
+
+        private async Task<string> DownloadVideoAsync(string videoUrl)
+        {
+            try
+            {
+                var youTube = YouTube.Default;
+                var video = await youTube.GetVideoAsync(videoUrl);
+
+                // Get the directory path from settings
+                string directoryPath = GetMusicDirectoryPath();
+
+                // If directory path is empty or invalid, show an error and return
+                if (string.IsNullOrEmpty(directoryPath))
+                {
+                    MessageBox.Show("Unable to determine the save directory.");
+                    return string.Empty;
+                }
+
+                // Define where to save the downloaded video
+                string filePath = Path.Combine(directoryPath, video.FullName);
+
+                // Download the video and save it to the specified path
+                File.WriteAllBytes(filePath, await video.GetBytesAsync());
+
+                return filePath;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error downloading video: {ex.Message}");
+                return string.Empty;
+            }
+        }
+
+
     }
 }
