@@ -107,8 +107,8 @@ namespace MusicApp
 
                 try
                 {
-                    player.URL = selectedPath;
-                    player.Ctlcontrols.play();
+                    //player.URL = selectedPath;
+                    //player.Ctlcontrols.play();
 
                     // Extract artist and title for lyrics search (Assure filename format: "Artist - Title.mp3")
                     string fileName = Path.GetFileNameWithoutExtension(selectedPath);
@@ -144,14 +144,10 @@ namespace MusicApp
 
         private void play_btn_Click(object sender, EventArgs e)
         {
-            if (paths?.Count > 0)
+            if (paths?.Count > 0 && track_list.SelectedIndex >= 0)
             {
-                if (player.URL != null)
-                {
-                    player.Ctlcontrols.stop();
-                }
-
-                player.URL = paths[0];
+                string selectedPath = paths[track_list.SelectedIndex];
+                player.URL = selectedPath;
                 player.Ctlcontrols.play();
             }
             else
@@ -480,10 +476,10 @@ namespace MusicApp
                 {
                     using (StreamReader reader = new StreamReader(settingsFile))
                     {
-                        // Read the directory path from the JSON file
+
                         string path = JsonSerializer.Deserialize<string>(reader.ReadToEnd());
 
-                        // Validate and return the directory path
+
                         if (Directory.Exists(path))
                         {
                             Debug.WriteLine(path);
@@ -492,20 +488,20 @@ namespace MusicApp
                         else
                         {
                             MessageBox.Show($"The directory path in the settings file does not exist: {path}");
-                            return ""; // Return an empty string to indicate failure
+                            return ""; 
                         }
                     }
                 }
                 else
                 {
                     MessageBox.Show("Settings file not found.");
-                    return ""; // Return an empty string to indicate failure
+                    return ""; 
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error reading settings file: {ex.Message}");
-                return ""; // Return an empty string to indicate failure
+                return ""; 
             }
         }
 
@@ -518,20 +514,19 @@ namespace MusicApp
                 var youTube = YouTube.Default;
                 var video = await youTube.GetVideoAsync(videoUrl);
 
-                // Get the directory path from settings
+
                 string directoryPath = GetMusicDirectoryPath();
 
-                // If directory path is empty or invalid, show an error and return
+
                 if (string.IsNullOrEmpty(directoryPath))
                 {
                     MessageBox.Show("Unable to determine the save directory.");
                     return string.Empty;
                 }
 
-                // Define where to save the downloaded video
+
                 string filePath = Path.Combine(directoryPath, video.FullName);
 
-                // Download the video and save it to the specified path
                 File.WriteAllBytes(filePath, await video.GetBytesAsync());
 
                 return filePath;
@@ -557,7 +552,7 @@ namespace MusicApp
                     JObject searchResult = JObject.Parse(json);
                     var lyrics = searchResult["message"]["body"]["lyrics"]["lyrics_body"].ToString();
 
-                    // Check if lyrics are truncated
+
                     if (lyrics.Contains("..."))
                     {
                         lyrics += "\n\n[Truncated lyrics. Full lyrics available on Musixmatch]";
@@ -573,6 +568,63 @@ namespace MusicApp
         {
             PlayVideoPage playVideoPage = new PlayVideoPage();
             playVideoPage.Show();
+        }
+
+        private void btnRemoveItem_Click(object sender, EventArgs e)
+        {
+            if (track_list.SelectedIndex >= 0 && track_list.SelectedIndex < paths.Count)
+            {
+                int selectedIndex = track_list.SelectedIndex;
+                string filePath = paths[selectedIndex];
+
+
+                DialogResult result = MessageBox.Show(
+                    $"Are you sure you want to delete '{Path.GetFileName(filePath)}' from the list and your music directory?",
+                    "Confirm Deletion",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+
+                        track_list.Items.RemoveAt(selectedIndex);
+                        paths.RemoveAt(selectedIndex);
+
+
+                        if (File.Exists(filePath))
+                        {
+                            File.Delete(filePath);
+                            Debug.WriteLine($"Deleted file: {filePath}");
+                        }
+                        else
+                        {
+                            Debug.WriteLine($"File not found: {filePath}");
+                        }
+
+                        if (player.URL == filePath)
+                        {
+                            player.Ctlcontrols.stop();
+                            player.URL = "";
+
+                            if (paths.Count > 0)
+                            {
+
+                                track_list.SelectedIndex = Math.Min(selectedIndex, paths.Count - 1);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error deleting file: {ex.Message}");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a track to delete.");
+            }
         }
     }
 }

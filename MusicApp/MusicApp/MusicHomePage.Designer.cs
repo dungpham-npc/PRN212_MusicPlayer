@@ -61,6 +61,7 @@
             btnAddYoutubeTrack = new Button();
             txtLyrics = new TextBox();
             btnPlayVideo = new Button();
+            btnRemoveItem = new Button();
             ((System.ComponentModel.ISupportInitialize)pic_art).BeginInit();
             ((System.ComponentModel.ISupportInitialize)trackVolume).BeginInit();
             ((System.ComponentModel.ISupportInitialize)player).BeginInit();
@@ -71,10 +72,9 @@
             // preview_btn
             // 
             preview_btn.FlatStyle = FlatStyle.Flat;
-            preview_btn.Location = new Point(74, 480);
-            preview_btn.Margin = new Padding(3, 2, 3, 2);
+            preview_btn.Location = new Point(85, 640);
             preview_btn.Name = "preview_btn";
-            preview_btn.Size = new Size(90, 32);
+            preview_btn.Size = new Size(103, 43);
             preview_btn.TabIndex = 0;
             preview_btn.Text = "Previous";
             preview_btn.UseVisualStyleBackColor = true;
@@ -83,10 +83,9 @@
             // next_btn
             // 
             next_btn.FlatStyle = FlatStyle.Flat;
-            next_btn.Location = new Point(170, 480);
-            next_btn.Margin = new Padding(3, 2, 3, 2);
+            next_btn.Location = new Point(194, 640);
             next_btn.Name = "next_btn";
-            next_btn.Size = new Size(90, 32);
+            next_btn.Size = new Size(103, 43);
             next_btn.TabIndex = 1;
             next_btn.Text = "Next";
             next_btn.UseVisualStyleBackColor = true;
@@ -95,10 +94,9 @@
             // play_btn
             // 
             play_btn.FlatStyle = FlatStyle.Flat;
-            play_btn.Location = new Point(265, 480);
-            play_btn.Margin = new Padding(3, 2, 3, 2);
+            play_btn.Location = new Point(303, 640);
             play_btn.Name = "play_btn";
-            play_btn.Size = new Size(90, 32);
+            play_btn.Size = new Size(103, 43);
             play_btn.TabIndex = 2;
             play_btn.Text = "Play";
             play_btn.UseVisualStyleBackColor = true;
@@ -107,10 +105,9 @@
             // pause_btn
             // 
             pause_btn.FlatStyle = FlatStyle.Flat;
-            pause_btn.Location = new Point(360, 480);
-            pause_btn.Margin = new Padding(3, 2, 3, 2);
+            pause_btn.Location = new Point(411, 640);
             pause_btn.Name = "pause_btn";
-            pause_btn.Size = new Size(90, 32);
+            pause_btn.Size = new Size(103, 43);
             pause_btn.TabIndex = 3;
             pause_btn.Text = "Pause";
             pause_btn.UseVisualStyleBackColor = true;
@@ -119,10 +116,9 @@
             // stop_btn
             // 
             stop_btn.FlatStyle = FlatStyle.Flat;
-            stop_btn.Location = new Point(456, 480);
-            stop_btn.Margin = new Padding(3, 2, 3, 2);
+            stop_btn.Location = new Point(521, 640);
             stop_btn.Name = "stop_btn";
-            stop_btn.Size = new Size(90, 32);
+            stop_btn.Size = new Size(103, 43);
             stop_btn.TabIndex = 4;
             stop_btn.Text = "Stop";
             stop_btn.UseVisualStyleBackColor = true;
@@ -130,10 +126,9 @@
             // 
             // open_btn
             // 
-            open_btn.Location = new Point(572, 466);
-            open_btn.Margin = new Padding(3, 2, 3, 2);
+            open_btn.Location = new Point(654, 621);
             open_btn.Name = "open_btn";
-            open_btn.Size = new Size(163, 46);
+            open_btn.Size = new Size(186, 61);
             open_btn.TabIndex = 5;
             open_btn.Text = "Choose File";
             open_btn.UseVisualStyleBackColor = true;
@@ -141,10 +136,9 @@
             // 
             // p_bar
             // 
-            p_bar.Location = new Point(48, 438);
-            p_bar.Margin = new Padding(3, 2, 3, 2);
+            p_bar.Location = new Point(55, 584);
             p_bar.Name = "p_bar";
-            p_bar.Size = new Size(644, 11);
+            p_bar.Size = new Size(736, 15);
             p_bar.TabIndex = 6;
             p_bar.Click += p_bar_Click;
             // 
@@ -153,32 +147,28 @@
             track_list.BackColor = Color.Gray;
             track_list.ForeColor = Color.Maroon;
             track_list.FormattingEnabled = true;
-            track_list.ItemHeight = 15;
-            track_list.Location = new Point(361, 215);
-            track_list.Margin = new Padding(3, 2, 3, 2);
+            track_list.Location = new Point(413, 287);
             track_list.Name = "track_list";
-            track_list.Size = new Size(315, 199);
+            track_list.Size = new Size(359, 264);
             track_list.TabIndex = 7;
             track_list.SelectedIndexChanged += track_list_SelectedIndexChanged;
             // 
             // pic_art
             // 
             pic_art.Image = (Image)resources.GetObject("pic_art.Image");
-            pic_art.Location = new Point(93, 215);
-            pic_art.Margin = new Padding(3, 2, 3, 2);
+            pic_art.Location = new Point(106, 287);
             pic_art.Name = "pic_art";
-            pic_art.Size = new Size(263, 198);
+            pic_art.Size = new Size(301, 264);
             pic_art.TabIndex = 8;
             pic_art.TabStop = false;
             // 
             // trackVolume
             // 
-            trackVolume.Location = new Point(1096, 152);
-            trackVolume.Margin = new Padding(3, 2, 3, 2);
+            trackVolume.Location = new Point(1253, 203);
             trackVolume.Maximum = 100;
             trackVolume.Name = "trackVolume";
             trackVolume.Orientation = Orientation.Vertical;
-            trackVolume.Size = new Size(45, 155);
+            trackVolume.Size = new Size(56, 207);
             trackVolume.TabIndex = 10;
             trackVolume.TickStyle = TickStyle.TopLeft;
             trackVolume.Scroll += trackVolume_Scroll;
@@ -187,18 +177,18 @@
             // 
             volume_label.AutoSize = true;
             volume_label.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            volume_label.Location = new Point(1078, 302);
+            volume_label.Location = new Point(1232, 403);
             volume_label.Name = "volume_label";
-            volume_label.Size = new Size(88, 30);
+            volume_label.Size = new Size(114, 37);
             volume_label.TabIndex = 11;
             volume_label.Text = "Volume";
             // 
             // lbl_volume
             // 
             lbl_volume.AutoSize = true;
-            lbl_volume.Location = new Point(1096, 135);
+            lbl_volume.Location = new Point(1253, 180);
             lbl_volume.Name = "lbl_volume";
-            lbl_volume.Size = new Size(35, 15);
+            lbl_volume.Size = new Size(45, 20);
             lbl_volume.TabIndex = 12;
             lbl_volume.Text = "100%";
             // 
@@ -207,11 +197,10 @@
             player.AllowDrop = true;
             player.Dock = DockStyle.Top;
             player.Enabled = true;
-            player.Location = new Point(0, 24);
-            player.Margin = new Padding(3, 2, 3, 2);
+            player.Location = new Point(0, 30);
             player.Name = "player";
             player.OcxState = (AxHost.State)resources.GetObject("player.OcxState");
-            player.Size = new Size(1184, 142);
+            player.Size = new Size(1353, 142);
             player.TabIndex = 9;
             player.Visible = false;
             player.Enter += player_Enter;
@@ -222,9 +211,9 @@
             lbl_track_start.BackColor = SystemColors.ActiveCaptionText;
             lbl_track_start.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_track_start.ForeColor = Color.Lime;
-            lbl_track_start.Location = new Point(0, 28);
+            lbl_track_start.Location = new Point(0, 37);
             lbl_track_start.Name = "lbl_track_start";
-            lbl_track_start.Size = new Size(199, 73);
+            lbl_track_start.Size = new Size(242, 91);
             lbl_track_start.TabIndex = 13;
             lbl_track_start.Text = "00:00";
             // 
@@ -234,9 +223,9 @@
             lbl_track_end.BackColor = SystemColors.ActiveCaptionText;
             lbl_track_end.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_track_end.ForeColor = Color.Lime;
-            lbl_track_end.Location = new Point(833, 28);
+            lbl_track_end.Location = new Point(952, 37);
             lbl_track_end.Name = "lbl_track_end";
-            lbl_track_end.Size = new Size(199, 73);
+            lbl_track_end.Size = new Size(242, 91);
             lbl_track_end.TabIndex = 14;
             lbl_track_end.Text = "00:00";
             // 
@@ -252,8 +241,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(5, 2, 0, 2);
-            menuStrip1.Size = new Size(1184, 24);
+            menuStrip1.Padding = new Padding(6, 3, 0, 3);
+            menuStrip1.Size = new Size(1353, 30);
             menuStrip1.TabIndex = 15;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -261,23 +250,22 @@
             // 
             toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { changeMusicPathToolStripMenuItem });
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(61, 20);
+            toolStripMenuItem1.Size = new Size(76, 24);
             toolStripMenuItem1.Text = "Settings";
             // 
             // changeMusicPathToolStripMenuItem
             // 
             changeMusicPathToolStripMenuItem.Name = "changeMusicPathToolStripMenuItem";
-            changeMusicPathToolStripMenuItem.Size = new Size(177, 22);
+            changeMusicPathToolStripMenuItem.Size = new Size(216, 26);
             changeMusicPathToolStripMenuItem.Text = "Change Music Path";
             changeMusicPathToolStripMenuItem.Click += changeMusicPathToolStripMenuItem_Click;
             // 
             // btnPlayMode
             // 
             btnPlayMode.FlatStyle = FlatStyle.Flat;
-            btnPlayMode.Location = new Point(265, 525);
-            btnPlayMode.Margin = new Padding(3, 2, 3, 2);
+            btnPlayMode.Location = new Point(303, 700);
             btnPlayMode.Name = "btnPlayMode";
-            btnPlayMode.Size = new Size(90, 32);
+            btnPlayMode.Size = new Size(103, 43);
             btnPlayMode.TabIndex = 16;
             btnPlayMode.Text = "Normal";
             btnPlayMode.UseVisualStyleBackColor = true;
@@ -286,19 +274,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(185, 533);
+            label1.Location = new Point(211, 711);
             label1.Name = "label1";
-            label1.Size = new Size(69, 15);
+            label1.Size = new Size(86, 20);
             label1.TabIndex = 17;
             label1.Text = "Play Mode: ";
             label1.Click += label1_Click;
             // 
             // btnQuit
             // 
-            btnQuit.Location = new Point(572, 518);
-            btnQuit.Margin = new Padding(3, 2, 3, 2);
+            btnQuit.Location = new Point(1160, 691);
             btnQuit.Name = "btnQuit";
-            btnQuit.Size = new Size(163, 46);
+            btnQuit.Size = new Size(186, 61);
             btnQuit.TabIndex = 18;
             btnQuit.Text = "Quit";
             btnQuit.UseVisualStyleBackColor = true;
@@ -307,11 +294,10 @@
             // trackBar1
             // 
             trackBar1.BackColor = SystemColors.MenuBar;
-            trackBar1.Location = new Point(37, 418);
-            trackBar1.Margin = new Padding(3, 2, 3, 2);
+            trackBar1.Location = new Point(42, 557);
             trackBar1.Maximum = 100;
             trackBar1.Name = "trackBar1";
-            trackBar1.Size = new Size(662, 45);
+            trackBar1.Size = new Size(757, 56);
             trackBar1.SmallChange = 5;
             trackBar1.TabIndex = 19;
             trackBar1.TickStyle = TickStyle.None;
@@ -320,10 +306,9 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaptionText;
-            panel1.Location = new Point(193, 28);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(221, 37);
             panel1.Name = "panel1";
-            panel1.Size = new Size(651, 73);
+            panel1.Size = new Size(744, 97);
             panel1.TabIndex = 20;
             // 
             // youtube_search_result
@@ -331,38 +316,34 @@
             youtube_search_result.BackColor = Color.Gray;
             youtube_search_result.ForeColor = Color.Maroon;
             youtube_search_result.FormattingEnabled = true;
-            youtube_search_result.ItemHeight = 15;
-            youtube_search_result.Location = new Point(731, 215);
-            youtube_search_result.Margin = new Padding(3, 2, 3, 2);
+            youtube_search_result.Location = new Point(835, 287);
             youtube_search_result.Name = "youtube_search_result";
-            youtube_search_result.Size = new Size(315, 199);
+            youtube_search_result.Size = new Size(359, 264);
             youtube_search_result.TabIndex = 21;
             youtube_search_result.SelectedIndexChanged += youtube_search_result_SelectedIndexChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(85, 142);
+            label2.Location = new Point(97, 189);
             label2.Name = "label2";
-            label2.Size = new Size(142, 15);
+            label2.Size = new Size(177, 20);
             label2.TabIndex = 22;
             label2.Text = "Search online on Youtube";
             // 
             // youtube_searchbar
             // 
-            youtube_searchbar.Location = new Point(245, 140);
-            youtube_searchbar.Margin = new Padding(3, 2, 3, 2);
+            youtube_searchbar.Location = new Point(280, 187);
             youtube_searchbar.Name = "youtube_searchbar";
-            youtube_searchbar.Size = new Size(322, 23);
+            youtube_searchbar.Size = new Size(367, 27);
             youtube_searchbar.TabIndex = 23;
             youtube_searchbar.TextChanged += youtube_searchbar_TextChanged;
             // 
             // btnYoutubeSearch
             // 
-            btnYoutubeSearch.Location = new Point(582, 140);
-            btnYoutubeSearch.Margin = new Padding(3, 2, 3, 2);
+            btnYoutubeSearch.Location = new Point(665, 187);
             btnYoutubeSearch.Name = "btnYoutubeSearch";
-            btnYoutubeSearch.Size = new Size(82, 22);
+            btnYoutubeSearch.Size = new Size(94, 29);
             btnYoutubeSearch.TabIndex = 24;
             btnYoutubeSearch.Text = "Search";
             btnYoutubeSearch.UseVisualStyleBackColor = true;
@@ -371,10 +352,9 @@
             // btnAddYoutubeTrack
             // 
             btnAddYoutubeTrack.FlatStyle = FlatStyle.Flat;
-            btnAddYoutubeTrack.Location = new Point(833, 428);
-            btnAddYoutubeTrack.Margin = new Padding(3, 2, 3, 2);
+            btnAddYoutubeTrack.Location = new Point(952, 571);
             btnAddYoutubeTrack.Name = "btnAddYoutubeTrack";
-            btnAddYoutubeTrack.Size = new Size(125, 41);
+            btnAddYoutubeTrack.Size = new Size(143, 55);
             btnAddYoutubeTrack.TabIndex = 25;
             btnAddYoutubeTrack.Text = "Download and add to tracklist";
             btnAddYoutubeTrack.UseVisualStyleBackColor = true;
@@ -382,29 +362,40 @@
             // 
             // txtLyrics
             // 
-            txtLyrics.Location = new Point(682, 98);
-            txtLyrics.Margin = new Padding(3, 2, 3, 2);
+            txtLyrics.Location = new Point(779, 131);
             txtLyrics.Multiline = true;
             txtLyrics.Name = "txtLyrics";
             txtLyrics.ScrollBars = ScrollBars.Vertical;
-            txtLyrics.Size = new Size(350, 114);
+            txtLyrics.Size = new Size(399, 151);
             txtLyrics.TabIndex = 9;
             // 
             // btnPlayVideo
             // 
-            btnPlayVideo.Location = new Point(833, 502);
+            btnPlayVideo.Location = new Point(952, 669);
+            btnPlayVideo.Margin = new Padding(3, 4, 3, 4);
             btnPlayVideo.Name = "btnPlayVideo";
-            btnPlayVideo.Size = new Size(125, 46);
+            btnPlayVideo.Size = new Size(143, 61);
             btnPlayVideo.TabIndex = 27;
             btnPlayVideo.Text = "Play Video";
             btnPlayVideo.UseVisualStyleBackColor = true;
             btnPlayVideo.Click += btnPlayVideo_Click;
             // 
+            // btnRemoveItem
+            // 
+            btnRemoveItem.Location = new Point(654, 691);
+            btnRemoveItem.Name = "btnRemoveItem";
+            btnRemoveItem.Size = new Size(186, 61);
+            btnRemoveItem.TabIndex = 28;
+            btnRemoveItem.Text = "Delete item from track";
+            btnRemoveItem.UseVisualStyleBackColor = true;
+            btnRemoveItem.Click += btnRemoveItem_Click;
+            // 
             // MusicHomePage
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1184, 572);
+            ClientSize = new Size(1353, 763);
+            Controls.Add(btnRemoveItem);
             Controls.Add(btnPlayVideo);
             Controls.Add(btnAddYoutubeTrack);
             Controls.Add(btnYoutubeSearch);
@@ -434,7 +425,6 @@
             Controls.Add(trackBar1);
             Controls.Add(txtLyrics);
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "MusicHomePage";
             Text = "Form1";
             Load += MusicHomePage_Load;
@@ -481,5 +471,6 @@
         private Button btnAddYoutubeTrack;
         private System.Windows.Forms.TextBox txtLyrics;
         private Button btnPlayVideo;
+        private Button btnRemoveItem;
     }
 }
