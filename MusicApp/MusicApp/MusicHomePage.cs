@@ -1,5 +1,6 @@
 ﻿using Google.Apis.Services;
 using Google.Apis.YouTube.v3;
+using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
@@ -97,7 +98,7 @@ namespace MusicApp
         }
 
 
-        private void track_list_SelectedIndexChanged(object sender, EventArgs e)
+        private async void track_list_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (track_list.SelectedIndex >= 0 && track_list.SelectedIndex < paths.Count)
             {
@@ -108,6 +109,20 @@ namespace MusicApp
                 {
                     player.URL = selectedPath;
                     player.Ctlcontrols.play();
+
+                    // Extract artist and title for lyrics search (Assure filename format: "Artist - Title.mp3")
+                    string fileName = Path.GetFileNameWithoutExtension(selectedPath);
+                    var parts = fileName.Split('-');
+                    if (parts.Length == 2)
+                    {
+                        string artist = parts[0].Trim();
+                        string title = parts[1].Trim();
+                        txtLyrics.Text = await FetchLyricsAsync(artist, title);
+                    }
+                    else
+                    {
+                        txtLyrics.Text = "Cannot determine artist and title for lyrics search.";
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -528,6 +543,31 @@ namespace MusicApp
             }
         }
 
+        private async Task<string> FetchLyricsAsync(string artist, string track)
+        {
+            string apiKey = "d68cb25f0b9d39f050fbca805191783e";
+            string searchUrl = $"https://api.musixmatch.com/ws/1.1/matcher.lyrics.get?q_track={Uri.EscapeDataString(track)}&q_artist={Uri.EscapeDataString(artist)}&apikey={apiKey}";
+
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = await client.GetAsync(searchUrl);
+                if (response.IsSuccessStatusCode)
+                {
+                    string json = await response.Content.ReadAsStringAsync();
+                    JObject searchResult = JObject.Parse(json);
+                    var lyrics = searchResult["message"]["body"]["lyrics"]["lyrics_body"].ToString();
+
+                    // Check if lyrics are truncated
+                    if (lyrics.Contains("..."))
+                    {
+                        lyrics += "\n\n[Truncated lyrics. Full lyrics available on Musixmatch]";
+                    }
+
+                    return lyrics;
+                }
+            }
+            return "Lyrics not found.";
+        }
 
     }
 }

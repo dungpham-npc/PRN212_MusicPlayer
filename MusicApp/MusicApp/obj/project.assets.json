@@ -4882,28 +4882,24 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "Google.Apis.YouTube.v3 >= 1.68.0.3421",
+      "Newtonsoft.Json >= 13.0.3",
       "VideoLibrary >= 3.2.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\canhd\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
+      "projectUniqueName": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
       "projectName": "MusicApp",
-      "projectPath": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
-      "packagesPath": "C:\\Users\\canhd\\.nuget\\packages\\",
-      "outputPath": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\obj\\",
+      "projectPath": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\canhd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4911,7 +4907,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4939,6 +4934,10 @@
             "target": "Package",
             "version": "[1.68.0.3421, )"
           },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
           "VideoLibrary": {
             "target": "Package",
             "version": "[3.2.4, )"
@@ -4963,7 +4962,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

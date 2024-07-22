@@ -355,6 +355,17 @@
             btnAddYoutubeTrack.Text = "Download and add to tracklist";
             btnAddYoutubeTrack.UseVisualStyleBackColor = true;
             btnAddYoutubeTrack.Click += btnAddYoutubeTrack_Click;
+            //
+            this.txtLyrics = new System.Windows.Forms.TextBox();
+            // 
+            // txtLyrics
+            // 
+            this.txtLyrics.Location = new System.Drawing.Point(780, 130);
+            this.txtLyrics.Multiline = true;
+            this.txtLyrics.Name = "txtLyrics";
+            this.txtLyrics.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtLyrics.Size = new System.Drawing.Size(400, 150);
+            this.txtLyrics.TabIndex = 9;
             // 
             // MusicHomePage
             // 
@@ -387,6 +398,7 @@
             Controls.Add(preview_btn);
             Controls.Add(menuStrip1);
             Controls.Add(trackBar1);
+            this.Controls.Add(this.txtLyrics);
             MainMenuStrip = menuStrip1;
             Name = "MusicHomePage";
             Text = "Form1";
@@ -432,5 +444,6 @@
         private TextBox youtube_searchbar;
         private Button btnYoutubeSearch;
         private Button btnAddYoutubeTrack;
+        private System.Windows.Forms.TextBox txtLyrics;
     }
 }
