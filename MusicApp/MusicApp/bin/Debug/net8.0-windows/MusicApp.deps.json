@@ -9,6 +9,7 @@
       "MusicApp/1.0.0": {
         "dependencies": {
           "Google.Apis.YouTube.v3": "1.68.0.3421",
+          "Newtonsoft.Json": "13.0.3",
           "VideoLibrary": "3.2.4",
           "Interop.WMPLib": "1.0.0.0",
           "AxInterop.WMPLib": "1.0.0.0"
