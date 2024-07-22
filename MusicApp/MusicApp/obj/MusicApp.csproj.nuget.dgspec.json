@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj": {}
+    "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj": {}
   },
   "projects": {
-    "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj": {
+    "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
+        "projectUniqueName": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
         "projectName": "MusicApp",
-        "projectPath": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\obj\\",
+        "projectPath": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
+        "packagesPath": "C:\\Users\\VH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\VH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
