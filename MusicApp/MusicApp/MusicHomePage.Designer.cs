@@ -62,6 +62,7 @@
             txtLyrics = new TextBox();
             btnPlayVideo = new Button();
             btnRemoveItem = new Button();
+            customInterfaceToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pic_art).BeginInit();
             ((System.ComponentModel.ISupportInitialize)trackVolume).BeginInit();
             ((System.ComponentModel.ISupportInitialize)player).BeginInit();
@@ -248,7 +249,7 @@
             // 
             // toolStripMenuItem1
             // 
-            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { changeMusicPathToolStripMenuItem });
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { changeMusicPathToolStripMenuItem, customInterfaceToolStripMenuItem });
             toolStripMenuItem1.Name = "toolStripMenuItem1";
             toolStripMenuItem1.Size = new Size(76, 24);
             toolStripMenuItem1.Text = "Settings";
@@ -256,7 +257,7 @@
             // changeMusicPathToolStripMenuItem
             // 
             changeMusicPathToolStripMenuItem.Name = "changeMusicPathToolStripMenuItem";
-            changeMusicPathToolStripMenuItem.Size = new Size(216, 26);
+            changeMusicPathToolStripMenuItem.Size = new Size(224, 26);
             changeMusicPathToolStripMenuItem.Text = "Change Music Path";
             changeMusicPathToolStripMenuItem.Click += changeMusicPathToolStripMenuItem_Click;
             // 
@@ -390,6 +391,13 @@
             btnRemoveItem.UseVisualStyleBackColor = true;
             btnRemoveItem.Click += btnRemoveItem_Click;
             // 
+            // customInterfaceToolStripMenuItem
+            // 
+            customInterfaceToolStripMenuItem.Name = "customInterfaceToolStripMenuItem";
+            customInterfaceToolStripMenuItem.Size = new Size(224, 26);
+            customInterfaceToolStripMenuItem.Text = "Custom Interface";
+            customInterfaceToolStripMenuItem.Click += customInterfaceToolStripMenuItem_Click;
+            // 
             // MusicHomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -472,5 +480,6 @@
         private System.Windows.Forms.TextBox txtLyrics;
         private Button btnPlayVideo;
         private Button btnRemoveItem;
+        private ToolStripMenuItem customInterfaceToolStripMenuItem;
     }
 }

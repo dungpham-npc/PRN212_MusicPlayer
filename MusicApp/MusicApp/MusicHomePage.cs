@@ -488,20 +488,20 @@ namespace MusicApp
                         else
                         {
                             MessageBox.Show($"The directory path in the settings file does not exist: {path}");
-                            return ""; 
+                            return "";
                         }
                     }
                 }
                 else
                 {
                     MessageBox.Show("Settings file not found.");
-                    return ""; 
+                    return "";
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error reading settings file: {ex.Message}");
-                return ""; 
+                return "";
             }
         }
 
@@ -626,5 +626,45 @@ namespace MusicApp
                 MessageBox.Show("Please select a track to delete.");
             }
         }
+
+        private void customInterfaceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            ColorDialog colorDialog = new ColorDialog();
+
+            colorDialog.Color = this.BackColor; 
+
+
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+
+                this.BackColor = colorDialog.Color;
+
+                foreach (Control control in this.Controls)
+                {
+                    if (control is Label)
+                    {
+                        ((Label)control).ForeColor = GetContrastingColor(colorDialog.Color);
+                    }
+                }
+
+
+                foreach (Control control in this.Controls)
+                {
+                    if (control is Button)
+                    {
+                        control.BackColor = colorDialog.Color;
+                        control.ForeColor = GetContrastingColor(colorDialog.Color);
+                    }
+                }
+            }
+        }
+
+        private Color GetContrastingColor(Color backgroundColor)
+        {
+            int rgbLum = (int)(0.2126 * backgroundColor.R + 0.7152 * backgroundColor.G + 0.0722 * backgroundColor.B);
+            return rgbLum < 128 ? Color.White : Color.Black;
+        }
+
     }
 }
