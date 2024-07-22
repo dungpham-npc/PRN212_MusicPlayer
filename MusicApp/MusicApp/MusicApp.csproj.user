@@ -4,5 +4,13 @@
     <Compile Update="MusicHomePage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PlayVideoPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="MusicHomePage.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

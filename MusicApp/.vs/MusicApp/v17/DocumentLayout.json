@@ -1,26 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\",
+  "WorkspaceRootPath": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|d:\\code\\prn212\\prn212_musicplayer\\musicapp\\musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|c:\\users\\vh\\desktop\\commit\\prn212_musicplayer\\musicapp\\musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\musicapp\\musichomepage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|c:\\users\\vh\\desktop\\commit\\prn212_musicplayer\\musicapp\\musicapp\\playvideopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\playvideopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|c:\\users\\vh\\desktop\\commit\\prn212_musicplayer\\musicapp\\musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|c:\\users\\vh\\desktop\\commit\\prn212_musicplayer\\musicapp\\musicapp\\musichomepage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\musichomepage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\musicapp\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|c:\\users\\vh\\desktop\\commit\\prn212_musicplayer\\musicapp\\musicapp\\musichomepage.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\musichomepage.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\musicapp\\musichomepage.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\musicapp\\musichomepage.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\musichomepage.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|c:\\users\\vh\\desktop\\commit\\prn212_musicplayer\\musicapp\\musicapp\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1244,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,63 +98,87 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayVideoPage.cs",
+              "DocumentMoniker": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\PlayVideoPage.cs",
+              "RelativeDocumentMoniker": "MusicApp\\PlayVideoPage.cs",
+              "ToolTip": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\PlayVideoPage.cs",
+              "RelativeToolTip": "MusicApp\\PlayVideoPage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T04:16:25.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MusicHomePage.resx",
+              "DocumentMoniker": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.resx",
+              "RelativeDocumentMoniker": "MusicApp\\MusicHomePage.resx",
+              "ToolTip": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.resx",
+              "RelativeToolTip": "MusicApp\\MusicHomePage.resx",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-07-22T04:14:13.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MusicHomePage.cs",
-              "DocumentMoniker": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs",
+              "Title": "MusicHomePage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs",
               "RelativeDocumentMoniker": "MusicApp\\MusicHomePage.cs",
-              "ToolTip": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs",
+              "ToolTip": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs [Design]",
+              "RelativeToolTip": "MusicApp\\MusicHomePage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T04:14:08.919Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MusicHomePage.cs",
+              "DocumentMoniker": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs",
+              "RelativeDocumentMoniker": "MusicApp\\MusicHomePage.cs",
+              "ToolTip": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs",
               "RelativeToolTip": "MusicApp\\MusicHomePage.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAQwDUAAAAAAAAA",
+              "ViewState": "AQIAAAQCAAAAAAAAAAD4vxcCAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T15:27:54.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\Class1.cs",
+              "DocumentMoniker": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\Class1.cs",
               "RelativeDocumentMoniker": "MusicApp\\Class1.cs",
-              "ToolTip": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\Class1.cs",
+              "ToolTip": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\Class1.cs",
               "RelativeToolTip": "MusicApp\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T15:25:45.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T15:25:45.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MusicHomePage.cs [Design]",
-              "DocumentMoniker": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs",
-              "RelativeDocumentMoniker": "MusicApp\\MusicHomePage.cs",
-              "ToolTip": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs [Design]",
-              "RelativeToolTip": "MusicApp\\MusicHomePage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T15:24:19.185Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MusicHomePage.resx",
-              "DocumentMoniker": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.resx",
+              "DocumentMoniker": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.resx",
               "RelativeDocumentMoniker": "MusicApp\\MusicHomePage.resx",
-              "ToolTip": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.resx",
+              "ToolTip": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.resx",
               "RelativeToolTip": "MusicApp\\MusicHomePage.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-07-21T14:57:38.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-21T14:57:38.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MusicHomePage.Designer.cs",
-              "DocumentMoniker": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.Designer.cs",
               "RelativeDocumentMoniker": "MusicApp\\MusicHomePage.Designer.cs",
-              "ToolTip": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.Designer.cs",
+              "ToolTip": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.Designer.cs",
               "RelativeToolTip": "MusicApp\\MusicHomePage.Designer.cs",
-              "ViewState": "AQIAAJEBAAAAAAAAAAAAAKUBAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKUBAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T14:22:43.617Z",
               "EditorCaption": ""

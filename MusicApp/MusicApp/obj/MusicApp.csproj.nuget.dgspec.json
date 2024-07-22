@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj": {}
+    "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj": {}
   },
   "projects": {
-    "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj": {
+    "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
+        "projectUniqueName": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
         "projectName": "MusicApp",
-        "projectPath": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
-        "packagesPath": "C:\\Users\\canhd\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\PRN212\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\obj\\",
+        "projectPath": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicApp.csproj",
+        "packagesPath": "C:\\Users\\VH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\canhd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\VH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,7 +73,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

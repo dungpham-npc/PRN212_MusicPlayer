@@ -528,6 +528,10 @@ namespace MusicApp
             }
         }
 
-
+        private void btnPlayVideo_Click(object sender, EventArgs e)
+        {
+            PlayVideoPage playVideoPage = new PlayVideoPage();
+            playVideoPage.Show();
+        }
     }
 }
