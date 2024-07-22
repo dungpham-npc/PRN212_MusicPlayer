@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\",
+  "WorkspaceRootPath": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\musicapp\\musichomepage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\musichomepage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|e:\\study\\prn212\\projectv2\\prn212_musicplayer\\musicapp\\musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|c:\\users\\vh\\desktop\\commit\\prn212_musicplayer\\musicapp\\musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\musichomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\musicapp\\musichomepage.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|c:\\users\\vh\\desktop\\commit\\prn212_musicplayer\\musicapp\\musicapp\\musichomepage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\musichomepage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\musicapp\\musichomepage.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{2586A1BA-BB5A-4CBE-9EDD-57E0B431D023}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\musichomepage.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
@@ -26,15 +26,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1244,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
@@ -42,28 +42,72 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1646721036:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2102939616:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MusicHomePage.cs",
-              "DocumentMoniker": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs",
+              "DocumentMoniker": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs",
               "RelativeDocumentMoniker": "MusicApp\\MusicHomePage.cs",
-              "ToolTip": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs",
+              "ToolTip": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs",
               "RelativeToolTip": "MusicApp\\MusicHomePage.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAwwIIAAAANAAAA",
+              "ViewState": "AQIAAC0CAAAAAAAAAAD4v0ECAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T15:27:54.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MusicHomePage.cs [Design]",
-              "DocumentMoniker": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs",
+              "DocumentMoniker": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs",
               "RelativeDocumentMoniker": "MusicApp\\MusicHomePage.cs",
-              "ToolTip": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs [Design]",
+              "ToolTip": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.cs [Design]",
               "RelativeToolTip": "MusicApp\\MusicHomePage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T15:24:19.185Z",
@@ -73,9 +117,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MusicHomePage.resx",
-              "DocumentMoniker": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.resx",
+              "DocumentMoniker": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.resx",
               "RelativeDocumentMoniker": "MusicApp\\MusicHomePage.resx",
-              "ToolTip": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.resx",
+              "ToolTip": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.resx",
               "RelativeToolTip": "MusicApp\\MusicHomePage.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2024-07-21T14:57:38.494Z",
@@ -83,16 +127,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MusicHomePage.Designer.cs",
-              "DocumentMoniker": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.Designer.cs",
               "RelativeDocumentMoniker": "MusicApp\\MusicHomePage.Designer.cs",
-              "ToolTip": "E:\\Study\\PRN212\\ProjectV2\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.Designer.cs",
+              "ToolTip": "C:\\Users\\VH\\Desktop\\commit\\PRN212_MusicPlayer\\MusicApp\\MusicApp\\MusicHomePage.Designer.cs",
               "RelativeToolTip": "MusicApp\\MusicHomePage.Designer.cs",
-              "ViewState": "AQIAAIsBAAAAAAAAAAAwwHUBAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T14:22:43.617Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 378,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1369,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             }
           ]
         }
