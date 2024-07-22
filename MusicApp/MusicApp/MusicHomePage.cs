@@ -30,6 +30,56 @@ namespace MusicApp
             this.Size = new Size(1050, 600);
             this.MinimumSize = this.Size;
             LoadMusicPathFromSettings();
+            this.AllowDrop = true;
+            this.DragEnter += new DragEventHandler(MusicHomePage_DragEnter);
+            this.DragDrop += new DragEventHandler(MusicHomePage_DragDrop);
+        }
+
+        private void MusicHomePage_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                e.Effect = DragDropEffects.Copy;
+            }
+            else
+            {
+                e.Effect = DragDropEffects.None;
+            }
+        }
+
+        private void MusicHomePage_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                string[] droppedFiles = (string[])e.Data.GetData(DataFormats.FileDrop);
+                List<string> validMusicFiles = new List<string>();
+
+                foreach (string file in droppedFiles)
+                {
+                    string extension = Path.GetExtension(file).ToLower();
+                    if (IsSupportedMusicExtension(extension))
+                    {
+                        validMusicFiles.Add(file);
+                    }
+                }
+
+                if (validMusicFiles.Count > 0)
+                {
+                    DialogResult result = MessageBox.Show($"Add {validMusicFiles.Count} files to the track list?", "Confirm Addition", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        foreach (string file in validMusicFiles)
+                        {
+                            paths.Add(file);
+                            track_list.Items.Add(Path.GetFileName(file));
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No supported music files found.");
+                }
+            }
         }
 
         private void LoadMusicFiles(string musicPath)
